@@ -1,0 +1,8 @@
+<h1>Do u want to delete  " {{item}} " ?</h1>
+<a href="{% url 'home' %}">NO</a>
+<div>
+	<form method="POST">
+	{% csrf_token %}
+	<input type="submit" value="YES">
+</form>
+</div>
